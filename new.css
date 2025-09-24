@@ -1,0 +1,130 @@
+nav{
+    background-color: #6b30a3;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;    
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 5px gray;
+}
+body{
+    background-color: white;
+}
+.brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+li{
+    padding: 10px;
+}
+li a{
+    color:white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+li a:hover{
+    background-color: cyan;
+    color: black;
+    transition: 0.5s;
+    padding: 5px;
+}
+img{
+    border-radius: 200px;
+}
+marquee{
+    color: black;
+}
+.menu-toogle{
+display: none;
+}
+.menu-icon{
+display: none;
+font-size: 20pt;
+cursor: pointer;
+}
+
+@media(max-width:420px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-toogle:checked + .menu-icon + .menu{
+        display: flex;
+    }
+}
+.book-gallery{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.book1,.book2,.book3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.book1 img{
+    width: 410px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: none;
+    justify-content: center;
+
+}
+.book2 img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px grey;
+    justify-content: center;
+
+}
+.book3 img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px grey;
+    justify-content: center;
+
+}
+.book1 button,.book2 button,.book3 button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 130px;    
+    width: 100px;
+    padding: 15px;
+}
+.book1 button:hover,.book2 button:hover,.book3 button:hover{
+    background-color:#032448;
+    color: white;
+   transition: 1s;
+}
+
+.book1 img:hover,.book2 img:hover,.book3 img:hover{
+   transform: scale(1.1);
+   transition: 1s;
+   box-shadow: 0px 0px 5px 5px grey;
+}
